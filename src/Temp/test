@@ -1,0 +1,450 @@
+{Anime?.map((item, id) => (
+                    <div className=' rounded-md bg-[#1b1b1b] hover:bg-[#1b1b1b]/80 shadow-lg m-2 hover:scale-105 transition ease-in-out duration-150 '>
+                    <img src= {globaltoggle?Anime[id].images.jpg.large_image_url? Anime[id].images.jpg.large_image_url : Anime[id].images.jpg.image_url:Anime2[id]?.images.jpg.large_image_url } width="" alt="Anime" className='pb-2  mx-auto object-fill  rounded-md hover:opacity-50'/>
+                    <h2 className='pt-2 text-md md:text-lg font-bold text-center '>{globaltoggle?Anime[id].title? Anime[id].title : Anime[id].name :Anime2[id]?.title}
+              
+                    </h2>
+                    <div className=' flex items-center justify-center pb-2 '>
+                        
+                    </div>
+                </div> 
+        )) }
+
+        ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Black_colour.jpg/1536px-Black_colour.jpg"]
+
+
+        <div className='p-4  grid grid-cols-2 md:grid-cols-4 '>
+            <img className='pb-4 rounded-md shadow-md' alt="" />
+            <img className='pb-4 rounded-md shadow-md'  alt="" />
+            <img className='pt-2 rounded-md shadow-md'  alt="" />
+            <img className='pt-2 rounded-md shadow-mds'  alt="" />
+            
+          </div>
+       if {
+        if
+       }
+
+
+       <ul>{Anime3.voices?.map((item,id)=>(<a  >{Anime3.voices[id].anime.title}</a>))}</ul> 
+
+
+
+
+
+       <li className={Anime3.voices?'pb-4 pt-10  text-md uppercase' : 'hidden '} >{<ul>{Anime3.voices?.map((item,id)=>(<a className='px-2 cursor-pointer hover:text-red-400 hover:font-bold ' href={'/' + Anime3.voices[id].anime.mal_id + '/0' } >{Anime3.voices[id].anime.title}</a>))}</ul>} <span className='text-red-400/80 text-lg font-bold'> Read MORE ... </span> </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+
+       <div className='flex   p-10 '>
+        <div>
+
+
+
+        <ul className=' pl-10'>
+          <li className='pb-10 pt-4 font-bold text-md uppercase text-red-400/60'>Name : </li>
+          
+          <li className='pb-10 pt-4 font-bold text-md uppercase text-red-400/60'> Nicknames: 
+            
+          </li>
+          <li className='pb-10 pt-4 font-bold text-md uppercase text-red-400/60'>Anime : </li>
+          <li className='pb-10 pt-4 font-bold text-md uppercase text-red-400/60'>Manga : </li>
+          <li className='pb-4 pt-10 font-bold text-md uppercase text-red-400/60'>Voices : </li>
+        </ul>
+
+
+
+        </div>
+        <div className='w-full h-full flex items-center justify-center'>
+          <ul>
+
+
+
+            <li className='pb-10 pt-4  text-md uppercase'> {Anime3.name}</li>
+            <li className='pb-10 pt-4  text-md uppercase' ><ul className='flex  justify-between'>{Anime3.nicknames?.map((item,id)=>(<li className='px-2'>{Anime3.nicknames[id]}</li>))}</ul></li>
+            <li className='pb-10 pt-4  text-md uppercase' ><ul>{!toggle? Tempo1?.slice(0,2): Tempo1}</ul> 
+            <span className={!toggle?  (Anime3.voices? 'flex justify-center uppercase text-red-400/80 text-lg font-bold cursor-pointer hover:text-white' : 'hidden') : 'hidden'} onClick={()=> {togglev5()}}>READ more ...</span>
+            <span className={toggle?  (Anime3.voices? 'flex justify-center uppercase text-red-400/80 text-lg font-bold cursor-pointer hover:text-white' : 'hidden') : 'hidden'} onClick={()=> {togglev5()}}>READ less ...</span>
+            </li>
+            <li className='pb-10 pt-4  text-md uppercase' ><ul>{!toggle? Tempo2?.slice(0,2): Tempo2}</ul>
+            <span className={!toggle?  (Anime3.voices? 'flex justify-center uppercase text-red-400/80 text-lg font-bold cursor-pointer hover:text-white' : 'hidden') : 'hidden'} onClick={()=> {togglev5()}}>READ more ...</span>
+            <span className={toggle?  (Anime3.voices? 'flex justify-center uppercase text-red-400/80 text-lg font-bold cursor-pointer hover:text-white' : 'hidden') : 'hidden'} onClick={()=> {togglev5()}}>READ less ...</span>
+            </li>
+            <li className='pb-4 pt-4  text-md uppercase' ><ul>{Anime3.voices?.map((item,id)=>(<a className='px-2 cursor-pointer hover:text-red-400 hover:font-bold ' href={'/' + Anime3.voices[id].person.mal_id + '/3' } >{Anime3.voices[id].person.name}</a>))}</ul></li>
+          </ul>
+
+
+
+          
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div className='md:col-span-1 '>
+        <img className=' rounded-lg shadow-lg w-full scale-90 ' src={Anime3.images?.jpg.image_url} alt={Anime3.title} />
+        <a className=' flex justify-center  overflow-hidden  mx-auto  py-2 px-4 text-sm md:text-md text-red-500/40 hover:text-red-500/80' href={Anime3.url}>{Anime3.url}</a>  
+  </div>
+  <div className='bg-[#1b1b1b]/60  mt-10 rounded-xl shadow-lg  md:col-span-2 '>
+      <div className='flex   p-10 '>
+        <div>
+        <ul className=' pl-10'>
+          <li className='pb-10 pt-4 font-bold text-md uppercase text-red-400/60'>Name : </li>
+          
+          <li className='pb-10 pt-4 font-bold text-md uppercase text-red-400/60'>Alt Names:  </li>
+          <li className='pb-10 pt-4 mx-1 font-bold text-md uppercase text-red-400/60'>Birthday:  </li>
+          <li className={Anime3.anime?.anime? 'pb-10 pt-4 font-bold text-md uppercase text-red-400/60' : 'hidden'}>Anime : </li>
+          <li className={Anime3.manga?.manga? 'pb-10 pt-4 font-bold text-md uppercase text-red-400/60' : 'hidden'}>Manga : </li>
+          <li className={Anime3.voices? 'pb-10 pt-4 font-bold text-md uppercase text-red-400/60' : 'hidden'}>Voices : </li>
+        </ul>
+        </div>
+        <div className='w-full h-full flex items-center justify-center'>
+          <ul>
+            <li className='pb-10 pt-4  text-md uppercase text-center '> {Anime3.name}</li>
+            <li className='pb-10 pt-6  text-md uppercase text-center'> {Anime3.name}</li>
+            <li className='pb-10 pt-8  text-md uppercase text-center ' >{Anime3.birthday}</li>
+
+
+            <li className={Anime3.anime?.anime? 'pb-10 pt-4 text-md uppercase' : 'hidden '} > {<ul>{Anime3.anime?.map((item,id)=>(<a className='px-2 cursor-pointer hover:text-red-400 hover:font-bold ' href={'/' + Anime3.anime[id].anime.mal_id + '/0' } >{Anime3.anime[id].anime.title}</a>))}</ul>}</li>
+            <li className={Anime3.manga?.manga? 'pb-10 pt-4  text-md uppercase' : 'hidden '} >{<ul>{Anime3.manga?.map((item,id)=>(<a className='px-2 cursor-pointer hover:text-red-400 hover:font-bold ' href={'/' + Anime3.manga[id].manga.mal_id + '/1' } >{Anime3.manga[id].manga.title}</a>))}</ul>}</li>
+            <li className={Anime3.voices?'pb-4 pt-4  text-md uppercase text-center ' : 'hidden '} ><ul>{!toggle? Tempo?.slice(0,10): Tempo}</ul></li>
+            <span className={!toggle?  (Anime3.voices? 'flex justify-center uppercase text-red-400/80 text-lg font-bold cursor-pointer hover:text-white' : 'hidden') : 'hidden'} onClick={()=> {togglev5()}}>READ more ...</span>
+            <span className={toggle?  (Anime3.voices? 'flex justify-center uppercase text-red-400/80 text-lg font-bold cursor-pointer hover:text-white' : 'hidden') : 'hidden'} onClick={()=> {togglev5()}}>READ less ...</span>
+            
+          
+          </ul>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div>
+    <ul className=' pl-10'>
+      <li className='pb-4 pt-4 font-bold text-md uppercase text-red-400/60'>Title : </li>
+      <li className={num == 0? 'pb-4 pt-4 font-bold text-md uppercase text-red-400/60': 'hidden'}>Episodes : </li>
+      <li className={num == 1? 'pb-4 pt-4 font-bold text-md uppercase text-red-400/60': 'hidden'}>Chapters : </li>
+      <li className={num == 1? 'pb-4 pt-4 font-bold text-md uppercase text-red-400/60': 'hidden'}>Volumes : </li>
+      
+      <li className={num == 0? 'pb-4 pt-4 font-bold text-md uppercase text-red-400/60': 'hidden'}>Duration : </li>
+      <li className='pb-4 pt-4 font-bold text-md uppercase text-red-400/60'>Demographics: </li>
+      <li className='pb-4 pt-4 font-bold text-md uppercase text-red-400/60'>Genre : </li>
+      <li className='pb-4 pt-4  font-bold text-md uppercase text-red-400/60'>Popularity : </li>
+      <li className={num == 0? 'pb-4 pt-4 font-bold text-md uppercase text-red-400/60': 'hidden'}>Rating : </li>
+      <li className='pb-4 pt-4 font-bold text-md uppercase text-red-400/60'>Members : </li>
+      <li className={num == 0? 'pb-4 pt-4 font-bold text-md uppercase text-red-400/60': 'hidden'}>Studios : </li>
+      <li className={num == 0? 'pb-4 pt-4 font-bold text-md uppercase text-red-400/60': 'hidden'}>Source :  </li>
+      <li className={num == 0? 'pb-4 pt-4 font-bold text-md uppercase text-red-400/60': 'pb-4 pt-4 font-bold text-md uppercase text-red-400/60'}>status : </li>
+      <li className={num == 0? 'pb-4 pt-4 font-bold text-md uppercase text-red-400/60': 'hidden'}>aired : </li>
+      <li className={num == 1? 'pb-4 pt-4 font-bold text-md uppercase text-red-400/60': 'hidden'}>Author : </li>
+
+    </ul>
+    </div>
+    <div className='w-full h-full flex items-center justify-center'>
+      <ul>
+        <li className='pb-4 pt-4  text-md uppercase'> {Anime3.title}</li>
+        <li className={num == 0? 'pb-4 pt-4  text-md uppercase' : 'hidden'} >{Anime3.episodes}</li>
+
+        <li className={num == 1? 'pb-4 pt-4  text-md uppercase' : 'hidden'} >{Anime3.chapters}</li>
+        <li className={num == 1? 'pb-4 pt-4  text-md uppercase' : 'hidden'} >{Anime3.volumes}</li>
+
+        <li className={num == 0? 'pb-4 pt-4  text-md uppercase' : 'hidden'} >{Anime3.duration}</li>
+        <li className='pb-4 pt-4  text-md uppercase' ><ul><li>{Anime3.demographics?.map((item,id)=>(<a className='px-2  '  >{Anime3.demographics[id]?.name}</a>))}</li></ul></li>
+        <li className='pb-4 pt-4  text-md uppercase' ><ul><li>{Anime3.genres?.map((item,id)=>(<a className='px-2  '  >{Anime3.genres[id]?.name}</a>))}</li></ul></li>
+        <li className='pb-4 pt-4  text-md uppercase' >{Anime3.popularity}</li>
+        <li className={num == 0? 'pb-4 pt-4  text-md uppercase' : 'hidden'} >{Anime3.rating}</li>
+        <li className='pb-4 pt-4  text-md uppercase' >{Anime3.members}</li>
+        <li className={num == 0? 'pb-4 pt-4  text-md uppercase' : 'hidden'} >{Anime3.title}</li>
+        <li className={num == 0? 'pb-4 pt-4  text-md uppercase' : 'hidden'} >{Anime3.source}</li>
+        <li className='pb-4 pt-4  text-md uppercase' >{Anime3.status}</li>
+        <li className={num == 0? 'pb-4 pt-4  text-md uppercase' : 'hidden'} >{Anime3.title}</li>
+        <li className={num == 1? 'pb-4 pt-4  text-md uppercase' : 'hidden'} ><ul><li>{Anime3.authors?.map((item,id)=>(<a className='px-2 cursor-pointer hover:text-red-400 hover:font-bold ' href={'/' + Anime3.authors[id]?.mal_id + '/3' } >{Anime3.authors[id]?.name}</a>))}</li></ul></li>
+
+        
+      </ul>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div  className={globaltoggle? 'hidden' : 'w-full px-10 '}>
+                        
+                        
+                        <div className=''> 
+                              <input id='input' className={globaltoggle? ' hidden  opacity-0 ': ' relative text-center   w-[150px] lg:w-[500px]  md:w-[300px]  border-2 rounded-md p-3  flex  border-red-700 transition-opacity ease-in-out duration-150 opacity-20 hover:opacity-75'} onChange={(e) => setfirst(e.target.value)} />
+                              
+                        </div>
+
+
+
+
+                        <button onClick={()=>{Togglev1(); setswitch1(ID) }}  className={globaltoggle? 'w-full h-full  py-3 px-10 m-1  text-center  border-2   rounded-lg text-white border-white text-lg lg:text-2xl font-semibold cursor-pointer transition duration-500 hover:scale-105 hover:text-red-600' : 'hidden   p-3 px-10 m-1 text-center  border-2   rounded-lg text-white border-red-700 text-lg lg:text-2xl font-semibold cursor-pointer scale-105 '}> Search</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div id='map' className={toggle? 'grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-1  p-2 mt-10 transition-opacity ease-in duration-50 opacity-0 ' : ' grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-1  p-2 mt-10 transition-opacity ease-in duration-300 opacity-100 '}>
+
+
+
+
+        {Anime?.map((item, id) => (
+                    <div  className={second == first?  (second=="shakeitbabyyeah"? `${shake}`:'cursor-pointer group rounded-md bg-[#1b1b1b] hover:bg-[#1b1b1b]/80 shadow-lg m-2 hover:scale-105 transition ease-in-out duration-150') : (' animate-pulse  cursor-pointer group rounded-md bg-[#1b1b1b] hover:bg-[#1b1b1b]/80 shadow-lg m-2 hover:scale-105 transition ease-in-out duration-150 ')}>
+                    <a href={globaltoggle?  '/' + Anime[id]?.mal_id + '/' + ID : '/' + Anime2[id]?.mal_id + '/' + ID}>
+                    <img src= {
+
+
+                      (!globaltoggle)? (Anime2[id]?.images.jpg.large_image_url? Anime2[id].images.jpg.large_image_url : ( Anime2[id]?.images.jpg.image_url? Anime2[id].images.jpg.image_url : black_url)) : (Anime[id].images.jpg.large_image_url? Anime[id].images.jpg.large_image_url :Anime[id].images.jpg.image_url)
+                      
+                      } width="" alt="Anime" className=' pb-2  mx-auto object-fill  rounded-md hover:opacity-50'/>
+                    <h2 className='group-hover:text-red-600 pt-2 text-md md:text-lg font-bold text-center '>{globaltoggle? (Anime[id].title? Anime[id].title : Anime[id].name) :(Anime2[id]?.title? Anime2[id]?.title : Anime2[id]?.name)}
+              
+                    </h2>
+                    <div className=' flex items-center justify-center pb-2 '>
+                        
+                    </div>
+                    </a>
+                </div> 
+        )) }
+              
+                    
+
+                </div>
+
+
+
+
+
+
+
+                <div className='flex justify-evenly items-center mx-auto '>
+
+                  {Anime3.relations?.map((item,id)=>(
+
+                      <div className='flex justify-center items-center px-10 '>
+                        <p>dwjdknwd</p>
+
+                        <div className='flex justify-center items-center px-4 '>
+                          <h2>title</h2>
+                          <h3>Year</h3>
+                        </div>
+                      </div>
+
+
+                  ))}
+
+
+                </div>
+
+
+                
+
+
+                axios.get("https://api.jikan.moe/v4/schedules?page=2").then((response) => {
+                      setAnime4(response.data.data)
+                      
+                    }).catch( e => {console.log(e)} )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div className='flex h-44  bg-[#1b1b1b] rounded-lg shadow-md hover:opacity-70 group hover:border-b-2 border-red-400'>
+                      <img className=' object-fill rounded-md' src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Black_colour.jpg/1536px-Black_colour.jpg" width='150px' alt="" />
+                      
+                      
+                      <div className=' transition-all duration-200 ease-in-out group-hover:w-60 w-0 group-hover:shadow-lg  group-hover:opacity-100 opacity-0 p-2 my-4 mx-2  flex items-center justify-center  flex-col '>
+
+                          <h2 className='font-bold text-xl py-2  '>Title</h2>
+                          <h3 className='text-md font-semibold'>Episodes</h3>
+                          <h3 className='text-sm '>bobJJNJN</h3>
+
+                      </div> 
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <div className='pt-4   sm:p-6 grid md:grid-cols-3 gap-8  transition-all duration-300 ease-in w-full h-full'>
+
+                <div className='md:col-span-1 '>
+                      <img className=' rounded-lg shadow-lg  max-w-[300px] sm:w-full scale-90 ' src={Anime3.images?.jpg.image_url} alt={Anime3.title} />
+                      <a className=' flex justify-center  overflow-hidden  mx-auto  py-2 px-4 text-sm md:text-md text-red-500/40 hover:text-red-500/80' href={Anime3.url}>{Anime3.url}</a>  
+                </div>
+                <div className='text-sm  scale-95 sm:scale-100 w-[400px] sm:w-full bg-[#1b1b1b]/60  mt-10 rounded-xl shadow-lg  md:col-span-2 '>
+                    <div className=' p-10 '>

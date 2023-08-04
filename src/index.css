@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  caret-color: transparent !important;
+
+
+}
+
+
+
+#disqus_thread {
+    color: red;
+	
+}
+
+
+html,body{
+    overflow-x: hidden ;
+	
+}
+
+
+#input {
+
+  opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in-out;
+	animation-duration: 1s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		width: 0;
+    opacity: 0;
+	}
+	100% {
+		width: 100px;
+    opacity: 1;
+	}
+}
+@keyframes fadeInOpacity1 {
+	0% {
+    opacity: 0;
+	}
+	100% {
+    opacity: 1;
+	}
+}
+@keyframes fadeInWidth {
+	0% {
+		gap: 0px;
+    
+	}
+	100% {
+		gap:10px;
+    
+	}
+}
+
+
+#fadein {
+	opacity: 1;
+	animation-name: fadeInOpacity1;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 3s;
+}
+#delaydelay {
+	opacity: 1;
+	animation-name: fadeInOpacity1;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-delay: 3.5s;
+	animation-duration: 3s;
+}
+
+
+
+
+
+
+
+
