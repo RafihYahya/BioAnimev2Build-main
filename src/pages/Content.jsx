@@ -47,7 +47,7 @@ const Tempo3 = (Anime3.voices?.map((item,id)=>(<a  key={id} className='px-2 curs
 
 const disqusShortname = "https-bioanime-netlify-app"
     const disqusConfig = {
-      url: "http://localhost:5174/"+id+"/"+num,
+      url: "https://bioanime.netlify.app/"+id+"/"+num,
       identifier: id + num,
       title: "Discussion"
     }
@@ -374,6 +374,14 @@ return (
                     </div>
                   </div>
         </div>
+        <div className=' ' >
+            <Disqus.DiscussionEmbed
+              shortname={disqusShortname}
+              config={disqusConfig}
+            />
+           
+
+          </div>
         </div>
   </div>
 )
@@ -398,7 +406,7 @@ return (
                         <img className=' rounded-lg shadow-lg  mx-auto max-w-[450px]  sm:w-full scale-90 ' src={Anime3.images?.jpg.image_url} alt={Anime3.title} />
                         <a className=' flex justify-center  overflow-hidden  mx-auto  py-2 px-4 text-sm md:text-md text-red-500/40 hover:text-red-500/80' href={Anime3.url}>{Anime3.url}</a>  
                   </div>
-                  <div className='text-sm  scale-95 sm:scale-100 w-[400px] sm:w-full bg-[#1b1b1b]/60  mt-10 rounded-xl shadow-lg  md:col-span-2 '>
+                  <div className=' text-sm  scale-95 sm:scale-100 w-[400px] sm:w-full bg-[#1b1b1b]/60  mt-10 rounded-xl shadow-lg  md:col-span-2 '>
                       <div className=' p-10 '>
                         
 
@@ -428,7 +436,7 @@ return (
 
                               <ul className='flex justify-between  items-center mx-10 my-10 '>
                                 <li className='font-bold text-md uppercase text-red-400/60  '>Anime:</li>
-                                <li className='text-center m-10 max-w-[500px] text-md uppercase' id='1'>
+                                <li className='text-center max-w-[200px] m-10 sm:max-w-[500px] text-md uppercase' id='1'>
                                 { toggle ?  (ido == '1' ? Tempo1 : Tempo1?.slice(0,2) )  : Tempo1?.slice(0,2) }
                                 <span id='1' className={!toggle?  (Tempo1?.length > 10 ? 'flex justify-center uppercase text-red-400/80 text-lg font-bold cursor-pointer hover:text-white' : 'hidden') : 'hidden'} onClick={(e)=> {setIdo(e.currentTarget.id) ; settoggle(true) }}>READ more ...</span>
                                 <span id='1' className={toggle?  (Anime3.voices? 'flex justify-center uppercase text-red-400/80 text-lg font-bold cursor-pointer hover:text-white' : 'hidden') : 'hidden'} onClick={()=> { settoggle(false) }}>READ less ...</span>
@@ -441,7 +449,7 @@ return (
 
                               <ul className='flex justify-between  items-center mx-10 my-10 '>
                                 <li className='font-bold text-md uppercase text-red-400/60 '>Manga:</li>
-                                <li className='text-center m-10 max-w-[500px] text-md uppercase' id='2'>
+                                <li className='text-center max-w-[200px] m-10 sm:max-w-[500px] text-md uppercase' id='2'>
                                 { togglev1 ?  (ido == '2' ? Tempo2 : Tempo2?.slice(0,2) )  : Tempo2?.slice(0,2) }
                                 <span id='2'className={!togglev1?  (Tempo2?.length > 10 ?  'flex justify-center uppercase text-red-400/80 text-lg font-bold cursor-pointer hover:text-white' : 'hidden') : 'hidden'} onClick={(e)=> {setIdo(e.currentTarget.id) ; settogglev1(true)}}>READ more ...</span>
                               <span id='2' className={togglev1?  (Anime3.voices? 'flex justify-center uppercase text-red-400/80 text-lg font-bold cursor-pointer hover:text-white' : 'hidden') : 'hidden'} onClick={()=> {settogglev1(false)  }}>READ less ...</span>
@@ -454,7 +462,7 @@ return (
 
                               <ul className='flex justify-between  items-center mx-10 my-10 '>
                                 <li className='font-bold text-md uppercase text-red-400/60 '>Voices:</li>
-                                <li className='text-center m-10 max-w-[500px] text-md uppercase ' id='3'>
+                                <li className='text-center max-w-[200px] m-10 sm:max-w-[500px] text-md uppercase ' id='3'>
                                 {!togglev2? Tempo?.slice(0,10): Tempo}
                                 <ul></ul>
                                 <span id='3' className={!togglev2?  (Tempo3?.length > 10 ?  'flex justify-center uppercase text-red-400/80 text-lg font-bold cursor-pointer hover:text-white' : 'hidden') : 'hidden'} onClick={(e)=> {setIdo(e.currentTarget.id) ; settogglev2(true)}}>READ more ...</span>
@@ -476,6 +484,14 @@ return (
                     </div>
                   </div>
         </div>
+        <div className=' ' >
+            <Disqus.DiscussionEmbed
+              shortname={disqusShortname}
+              config={disqusConfig}
+            />
+           
+
+          </div>
         </div>
   </div>
   )
