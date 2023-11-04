@@ -58,7 +58,7 @@ if (num == 0 || num == 1 ){
 
 
     <div className=' w-[screen] sm:scale-100 scale-75  sm:w-full h-full sm:pt-[125px] pt-[10px] '>
-      <div className='w-full h-full mx-auto max-w-[1550px]'>
+      <div className='px-5 w-full h-full mx-auto max-w-[1550px]'>
           <div className='p-10 mb-10 mt-4 block sm:flex items-baseline justify-between'>
             <div>
                 <h1 className=' text-3xl font-bold text-red-500/80 uppercase '>{Anime3.title}</h1>
