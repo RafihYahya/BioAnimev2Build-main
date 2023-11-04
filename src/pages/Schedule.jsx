@@ -100,7 +100,7 @@ const Schedule = () => {
 
 
   return (
-    <div className=' w-screen sm:w-full h-full pt-[125px]'>
+    <div className=' w-screen sm:w-full h-full pt-[125px] px-5'>
         <div className='w-full h-full mx-auto max-w-[1550px]'>
             
             <h1 className='text-4xl text-red-500 font-bold pb-10'>Schedule</h1>
